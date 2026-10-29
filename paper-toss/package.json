@@ -1,0 +1,16 @@
+{
+  "name": "paper-toss",
+  "version": "1.0.0",
+  "description": "Delete files by crumpling them up and throwing them into a trash can.",
+  "main": "src/main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "demo": "node scripts/serve-demo.js",
+    "test": "node --test test/*.test.js",
+    "smoke": "electron scripts/smoke.js"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

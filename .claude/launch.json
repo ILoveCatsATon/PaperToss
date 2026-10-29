@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "paper-toss-desktop",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/serve-demo.js"],
+      "port": 5174, "env": { "PORT": "5174" }
+    }
+  ]
+}
