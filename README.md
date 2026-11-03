@@ -17,6 +17,19 @@ npm run smoke      # real app, hidden: pushes one temp file through the app's ow
                    # trash step into the Recycle Bin and checks the bin count
 ```
 
+## Installer (Windows)
+
+```bash
+npm install
+powershell -ExecutionPolicy Bypass -File installer/build-installer.ps1
+```
+
+This builds `dist/Paper Toss Installer.exe` (~120 MB, it carries the Electron
+runtime). Running it is one click: it installs per-user to
+`%LOCALAPPDATA%\Programs\Paper Toss` (no admin), adds Start menu and desktop
+shortcuts, registers in Settings > Apps > Installed apps, and deletes itself
+when you close it. `installer/make-icon.ps1` redraws the icon.
+
 ## How to play
 
 1. Press **Pick file(s)** (multi-select) or **Pick a folder**, or drop files onto

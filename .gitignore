@@ -1,2 +1,4 @@
 node_modules/
 scripts/smoke-result.json
+dist/
+installer/build/
